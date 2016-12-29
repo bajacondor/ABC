@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Itim:400,200,700");
+@font-face {
+  font-family: 'Hannotate';
+  src: url("../fonts/Hannotate.ttc");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Itim', sans-serif, Regular;
+  background-color: #fffbef;
+}
+.header {
+  background: url("../images/grass.jpg");
+  background-position: center;
+}
+.header .page-title {
+  font-weight: 200;
+  font-size: 80px;
+  text-align: center;
+  padding: 100px;
+  color: #6d5a72;
+  text-shadow: 2px 2px 5px #fffbef;
+}
+.nav {
+  background: #6184d8;
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  display: inline-block;
+  padding: 20px;
+  color: #fffbef;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #3ab795;
+  text-decoration: underline;
+}
+.main-content {
+  margin: 50px auto;
+  max-width: 600px;
+}
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 1.7em;
+  color: #6d5a72;
+}
+.footer {
+  margin: 50px auto;
+  max-width: 600px;
+  border-top: 1px solid #6d5a72;
+  padding: 20px 0;
+}
+.footer p {
+  color: #6184d8;
+  font-size: 12px;
+}

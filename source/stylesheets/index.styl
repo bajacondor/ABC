@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Itim:400,200,700')
+@font-face
+    font-family 'Hannotate'
+    src url('../fonts/Hannotate.ttc')
+
+abc-green = #5efc8d
+abc-dark-blue = #6184d8
+abc-white = #fffbef
+abc-blue = #93bedf
+abc-purple = #6d5a72
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+
+body
+  //font-family 'Hannotate', 'Hannotate TC', sans-serif, Regular
+  font-family 'Itim', sans-serif, Regular
+  background-color abc-white
+
+.header
+  background url('../images/grass.jpg')
+  background-position center
+
+  .page-title
+    font-weight 200
+    font-size 80px
+    text-align center
+    padding 100px
+    color abc-purple
+    text-shadow: 2px 2px 5px abc-white;
+
+.nav
+  background abc-dark-blue
+  text-align center
+
+  li
+    display inline-block
+
+  a
+    display inline-block
+    padding 20px
+    color abc-white
+    text-decoration none
+
+    &:hover
+      background-color #3AB795
+      text-decoration underline
+
+.main-content
+  margin 50px auto
+  max-width 600px
+
+  p
+    line-height 1.6
+    margin-bottom 1.7em
+    color abc-purple
+
+.footer
+  margin 50px auto
+  max-width 600px
+  border-top 1px solid abc-purple
+  padding 20px 0
+
+  p
+    color abc-dark-blue
+    font-size 12px

@@ -1,0 +1,22 @@
+{
+  "name": "abc",
+  "version": "0.0.1",
+  "description": "Amandas Site",
+  "main": "server.js",
+  "scripts": {
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
+    "start": "node server"
+  },
+  "author": "David Schile <dave@schile.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "stylus": "^0.54.5"
+  }
+}

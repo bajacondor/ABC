@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/css/index.css')
+    title Forever Our Kids
+  body
+    .header
+      h1.page-title Forever Our Kids
+
+    ul.nav
+      li: a(href='/') Home
+      li: a(href='#news') News
+      li: a(href='#about') About
+      li: a(href='#contact') Contact
+
+    .main-content
+      block content
+
+    .footer
+      - var year = new Date().getFullYear();
+      p= 'Copyright © ' + year + ' Forever Our Kids. Forever Our Kids meets the requirements for the Washington State Courts LSPR 94.03 Mandatory Parenting Seminars.'
