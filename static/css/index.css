@@ -16,7 +16,13 @@ body {
   background: url("../images/grass.jpg");
   background-position: center;
 }
-.header .page-title {
+.house {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  overflow: hidden;
+}
+.page-title {
   font-weight: 200;
   font-size: 80px;
   text-align: center;
