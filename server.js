@@ -5,7 +5,10 @@ var express = require('express')
   , template = require('pug').compileFile(__dirname + '/source/templates/homepage.pug')
 
 app.use(logger('dev'))
+
 app.use(express.static(__dirname + '/static'))
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/mmenu', express.static(__dirname + '/node_modules/jquery.mmenu/dist'));
 
 app.get('/', function (req, res, next) {
   try {
