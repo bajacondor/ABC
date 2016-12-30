@@ -18,9 +18,13 @@ body {
 }
 .house {
   position: absolute;
-  top: 10px;
+  top: 120px;
+  right: 10px;
+}
+.family {
+  position: absolute;
+  top: 139px;
   left: 10px;
-  overflow: hidden;
 }
 .page-title {
   font-weight: 200;
